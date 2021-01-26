@@ -1,11 +1,12 @@
-import React from 'react'
-
+import React from "react";
+import "./Landing.css";
+import Hero from "../components/Hero/Hero";
 function Landing() {
-    return (
-        <div>
-            <h1>Hello From Landing!</h1>
-        </div>
-    )
+  return (
+    <div className="wrapper">
+      <Hero />
+    </div>
+  );
 }
 
-export default Landing
+export default Landing;
