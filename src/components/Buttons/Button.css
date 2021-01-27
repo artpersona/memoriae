@@ -1,0 +1,64 @@
+:root {
+  --primary: #014073;
+}
+
+.btn {
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: #ffff;
+  border: 1px solid whitesmoke;
+}
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary);
+  padding: 8px 20px;
+  border: 1px solid var(--primary);
+  transition: all 0.3 ease-out;
+}
+
+.btn-medium {
+  padding: 8px 20px;
+  font-size: 20px;
+}
+
+.btn-large {
+  padding: 12px 26px;
+  font-size: 20px;
+}
+
+.btn-outline:hover {
+  background-image: linear-gradient(
+    to right,
+    #0b3e63,
+    #265384,
+    #4367a6,
+    #647cc8,
+    #8990ea
+  );
+  color: #ffff;
+  transition: all 0.3 ease-out;
+  border: 1px solid transparent;
+}
+
+.btn-primary:hover {
+  background-color: #1a78b3;
+  border: 1px solid var(--primary);
+  color: white;
+}
+
+@media only screen and (max-width: 890px) {
+  .btn-large {
+    padding: 12px 26px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .btn:last-child {
+    margin-top: 15px;
+  }
+}
