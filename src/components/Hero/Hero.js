@@ -30,7 +30,11 @@ function Hero() {
             </Button>
           </div>
         </div>
-        <img src="/hero_img.jpg" className="hero__image" />
+        <img
+          src="/hero_img.jpg"
+          alt="thinkingman_jpg"
+          className="hero__image"
+        />
       </div>
     </div>
   );
