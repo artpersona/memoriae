@@ -55,14 +55,20 @@
   }
   .hero__info {
     text-align: center;
-    margin: 0;
+    margin-top: 20px;
     width: 100%;
   }
   .hero__wrapper {
     flex-direction: column;
+    justify-content: space-around;
   }
 
   .button__group {
     flex-direction: column;
+  }
+
+  .hero__image {
+    margin-top: -30px;
+    width: 60%;
   }
 }
