@@ -19,12 +19,8 @@ function NavBar() {
   const [scrolled, setScrolled] = useState(false);
 
   const changeBackground = () => {
-    if (window.innerWidth > 760) {
-      if (window.scrollY >= 80) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+    if (window.scrollY > 80) {
+      setScrolled(true);
     } else {
       setScrolled(false);
     }

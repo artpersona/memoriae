@@ -1,18 +1,28 @@
 .navbar__container {
+  position: absolute;
   width: 100%;
   background-color: white;
   display: flex;
   justify-content: center;
   position: sticky;
-  top: 0;
+  top: 30px;
   z-index: 999;
-  padding-top: 30px;
   height: 80px;
   transition: all ease 300ms;
 }
 
+.navbar__container::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  width: 100%;
+  height: 30px;
+  background-color: white;
+}
+
 .nav__scrolled {
-  padding-top: 0;
+  top: 0;
+  /* padding-top: 30px; */
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
